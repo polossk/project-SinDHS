@@ -1,0 +1,71 @@
+- slug: jekyll
+  name: Jekyll
+
+- slug: update
+  name: 更新
+
+# 技术宅的周常
+
+- slug: battle
+  name: 技术宅的周常
+
+- slug: hitorigoto
+  name: 独り言
+
+- slug: SinDHS
+  name: SinDHS
+
+- slug: AppsTools
+  name: AppsTools
+
+# 笔记本
+
+- slug: notebook
+  name: 笔记本
+
+- slug: machinelearning
+  name: 机器学习
+
+- slug: planguage
+  name: 编程语言
+
+- slug: algolearning
+  name: 算法笔记
+
+- slug: computeros
+  name: 环境配置
+
+# 竞赛相关
+
+- slug: contest
+  name: 竞赛相关
+
+- slug: solution
+  name: 比赛与专题训练
+
+- slug: math
+  name: 数学问题
+
+- slug: algorithm
+  name: 常用算法
+
+- slug: serach
+  name: 搜索
+
+- slug: string
+  name: 字符串
+
+- slug: dp
+  name: 动态规划
+
+- slug: gametheory
+  name: 博弈
+
+- slug: datastructure
+  name: 数据结构
+
+- slug: graphtheory
+  name: 图论
+
+- slug: easy
+  name: 水题

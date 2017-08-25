@@ -1,0 +1,303 @@
+---
+---
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {font-family: "Segoe UI","Microsoft Yahei","微软雅黑", arial, sans-serif; margin: 0px; padding: 0px; font-size: 100%; color: #555; background-color: white;}
+html, body {line-height: 1.4em;}
+
+@media (min-width: 768px) { .container { width: 750px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
+@media (min-width: 1200px) { .container { width: 1170px; } }
+@media (min-width: 1400px) { .container { width: 1368px; } }
+/* @media (min-width: 1800px) { .container { width: 1760px; } } */
+
+ol, ul {list-style: none;}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1em 0 2em 0;
+  border-color: darkgray;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+}
+td { 
+  border-color: darkgray;
+  border-style: solid;
+  border-top-width: 1px;
+}
+caption, th, td {font-weight: normal; text-align: left;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+.widget table {clear: both;}
+ul.the-icons {list-style: none; margin: 0 0 0 1em !important;}
+
+hr {background-color: #ddd; border: 0; height: 1px; margin-bottom: 1.625em;}
+p { 
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 1.25em;
+}
+
+a { color: #41690B; text-decoration: none; }
+a:link, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+ul, ol {margin: 0 0 1.625em 0em; padding: 0;}
+ul {list-style: square;}
+ol {list-style: decimal;}
+ol ol {list-style: upper-alpha;}
+ol ol ol {list-style: lower-roman;}
+ol ol ol ol {list-style: lower-alpha;}
+ul ul, ol ol, ul ol, ol ul {margin: 0 0 0 1em; padding: 0;}
+
+.col-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+}
+
+h1 {font-size: 180%; margin: 0 0 1em;}
+h2 {font-size: 170%; margin: 0 0 1em;}
+h3 {font-size: 135%; margin: 0 0 1em;}
+h4 {font-size: 150%; margin: 0 0 1em;}
+h5 {font-size: 135%; margin: 0 0 1em;}
+h6 {font-size: 100%; margin: 0 0 1em;}
+
+dl {}
+dt {font-weight: bold;}
+dd {margin-bottom: 1.625em;}
+strong {font-weight: bold;}
+cite, em, i {font-style: italic;}
+
+pre {font-family: "Courier New", Courier, monospace; margin-bottom: 1.625em; overflow: auto; padding: 0.75em 1.625em; width: 80%; display: block; clear: both; white-space: pre-wrap; word-wrap: break-word; font-size: 90%; color: #333; border: 1px solid #ccc; background-color: #eee; background-repeat: repeat;}
+code, kbd {font-size: 90%; font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;}
+
+.page-heading {
+  font-size: 150%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+.post-header {
+  margin-bottom: 5px;
+  padding-bottom: 0px;
+}
+
+.post-meta {
+  margin: 0 0 0 5px;
+  color: #999;
+  font-size: 90% !important;
+}
+
+.post-meta span{
+  margin: 0 15px 0 0;
+}
+
+.post-meta a{
+  color: #999;
+}
+
+.post-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #095422;
+}
+
+.post-content {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.post-content p {
+  margin-bottom: 1.25em;
+}
+
+.post-content ul ul, .post-content ol ol, .post-content ul ol, .post-content ol ul {margin-bottom: 0; font-size: 92%;}
+.post-content ul li, .post-content ol li {margin: 0 0 0.6em;}
+.post-content ul li ul li, .post-content ol li ol li {margin: 0.2em 0 0;}
+.post-content ul, .post-content ol {margin: 0 0 1.6em 3em;}
+.post-content ul ul, .post-content ol ol {margin: 0 0 0em 2em;}
+
+.post {
+  margin-bottom: 1em;
+}
+
+.aside {
+  margin-top: 10px;
+}
+
+.aside-title {
+  font-weight: bold;
+  color: #41690B;
+  margin-bottom: 10px;
+}
+
+.aside-content {
+  margin-left: 1em;
+  margin-right: 0;
+  margin-top: 10px;
+  margin-bottom: 1em;
+}
+
+.aside-content > p { margin-bottom: 5px; }
+
+.aside-content > a { color: #6CA122; }
+
+.tags {
+  margin: 5px 2px 5px 2px;
+  padding: 0px;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  float: left;
+  font-size: 0.9em;
+}
+
+.tags > a, .tags > p {
+  color: white;
+  margin: 0px;
+  padding: 4px;
+}
+
+.level-1 a { color: #F3FBFE; background-color: #022F3F; }
+.level-1 a:link a:visited { color: #F3FBFE; background-color: #022F3F; }
+.level-1 a:hover { color: #022F3F; background-color: #59CCF2; }
+.level-1 a:active { color: #F3FBFE; background-color: #022F3F; }
+
+.level-2 a { color: #F3FBFE; background-color: #0A4559; }
+.level-2 a:link a:visited { color: #F3FBFE; background-color: #0A4559; }
+.level-2 a:hover { color: #0A4559; background-color: #59CCF2; }
+.level-2 a:active { color: #F3FBFE; background-color: #0A4559; }
+
+.level-3 a { color: #F3FBFE; background-color: #1A596E; }
+.level-3 a:link a:visited { color: #F3FBFE; background-color: #1A596E; }
+.level-3 a:hover { color: #1A596E; background-color: #59CCF2; }
+.level-3 a:active { color: #F3FBFE; background-color: #1A596E; }
+
+.level-4 a { color: #F3FBFE; background-color: #2E6C80; }
+.level-4 a:link a:visited { color: #F3FBFE; background-color: #2E6C80; }
+.level-4 a:hover { color: #2E6C80; background-color: #59CCF2; }
+.level-4 a:active { color: #F3FBFE; background-color: #2E6C80; }
+
+.level-5 a { color: #F3FBFE; background-color: #4C8497; }
+.level-5 a:link a:visited { color: #F3FBFE; background-color: #4C8497; }
+.level-5 a:hover { color: #4C8497; background-color: #59CCF2; }
+.level-5 a:active { color: #F3FBFE; background-color: #4C8497; }
+
+
+* { zoom: 1; }
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  background-color: #6AA4B7;
+  color: #1A596E;
+}
+
+.footer span {
+  margin: 5px 5px 5px 5px;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  font-family: Georgia, "Bitstream Charter", serif;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 1.25em 3em 1.25em 3em;
+  border-left: 5px solid #999;
+  padding-left: 1em;
+  line-height: 1.6em;
+}
+blockquote em, blockquote i, blockquote cite { font-style: normal;}
+blockquote cite { font-weight: 300; letter-spacing: 0.05em; }
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eef; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+  width: 100%;
+}
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * bootstrap navbar custom color
+ */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #C0C0C0;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: white; /*BACKGROUND color for active*/
+  background-color: #030033;
+}
+
+.navbar-default {
+  background-color: #1B813E;
+  border-color: #FFFFFF;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #66CCFF;  /*change color of links in drop down here*/
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: silver; /*Change rollover cell color here*/
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #C0C0C0;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; /*Change active text color here*/
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #C0C0C0;
+  background-color: transparent;
+}
+

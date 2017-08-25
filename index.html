@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="home">
+	<!-- {% assign english_char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %} -->
+	{% for post in paginator.posts %}
+	<article class="post">
+		<header class="post-header">
+			<h1 class="post-title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h1>
+			<p class="post-meta">
+				<span>
+					<i class="icon-time"></i>
+					{{ post.date | date: "%Y年%-m月%-d日" }}
+				</span>
+				<span>
+					<i class="icon-file"></i>
+					{{ post.categories | category_links }}
+				</span>
+				<span>
+					<i class="icon-tags"></i>
+					{{ post.tags | tag_links }}
+				</span>
+			</p>
+		</header>
+		<div class="post-content"><p>
+			<!-- {% capture identifier_char %}{{ post.content | strip_html | slice: 0, 1 | upcase }}{% endcapture %}
+			{% if english_char contains identifier_char %}
+				{{ post.content | strip_html | strip_newlines | truncatewords: 45 }}
+			{% else %}
+				{{ post.content | strip_html | strip_newlines | truncate: 120 }}
+			{% endif %} -->
+			{{ post.content | strip_html | strip_newlines | truncate: 120 }}
+		</p></div>
+		<a class="btn btn-success" href="{{ post.url | prepend: site.baseurl }}">
+		<i class="icon-circle-arrow-right"></i> Continue Reading</a>
+	</article>
+	{% endfor %}
+	<nav>
+		<ul class="pager">
+		{% if paginator.previous_page %}
+			<li class="previous">
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '/index.html', '/' }}">
+			&laquo; 前一页</a>
+			</li>
+		{% endif %}
+
+		{% if paginator.next_page %}
+			<li class="next">
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+			&raquo; 后一页</a>
+			</li>
+		{% endif %}
+		</ul>
+	</nav>
+
+
+</div>

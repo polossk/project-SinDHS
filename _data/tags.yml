@@ -1,0 +1,263 @@
+- slug: python
+  name: python
+
+- slug: ruby
+  name: ruby
+
+- slug: cpp
+  name: C++
+
+- slug: gpp
+  name: g++
+
+- slug: Csharp
+  name: C#
+
+- slug: LaTex
+  name: LaTeX
+
+- slug: Javascript
+  name: Javascript
+
+- slug: cmd
+  name: cmd
+
+- slug: STL
+  name: STL
+
+- slug: ffmpeg
+  name: ffmpeg
+
+- slug: image
+  name: image
+
+- slug: fractal
+  name: fractal
+
+- slug: SinDHS
+  name: SinDHS
+
+- slug: jekyll
+  name: Jekyll
+
+- slug: machinelearning
+  name: 机器学习
+
+- slug: laplacianeigenmaps
+  name: Laplacian Eigenmaps
+
+- slug: lle
+  name: LLE
+
+- slug: manifoldlearning
+  name: 流形学习
+
+- slug: demensionreducation
+  name: 降维
+
+- slug: translation
+  name: 翻译
+
+- slug: nihongo
+  name: 日本語
+
+- slug: xorpw
+  name: 异或密码
+
+- slug: password
+  name: 密码
+
+- slug: mathm
+  name: 数模 
+
+- slug: tsukkomi
+  name: 突っ込み
+
+- slug: deeplearning
+  name: Deep Learning
+
+- slug: keras
+  name: keras
+
+- slug: theano
+  name: theano
+
+- slug: cnn
+  name: CNN
+
+- slug: app
+  name: app
+
+- slug: WifiBuilder
+  name: WifiBuilder
+
+- slug: Regional
+  name: Regional
+
+- slug: Algorithm
+  name: Algorithm
+
+
+# ACM - ICPC
+- slug: acmicpc
+  name: ACM-ICPC
+
+- slug: realcombat
+  name: 比赛
+
+- slug: poj
+  name: POJ
+
+- slug: zoj
+  name: ZOJ
+
+- slug: uva
+  name: UVa
+
+- slug: hdu
+  name: hdu
+
+- slug: fzu
+  name: FZU
+
+- slug: lightoj
+  name: LightOJ
+
+- slug: codeforces
+  name: Codeforces
+
+- slug: easypro
+  name: 水题
+
+- slug: baoli
+  name: Brute Force
+
+- slug: numbertheory
+  name: 数论
+
+- slug: computeg
+  name: 计算几何
+
+- slug: basiccompute
+  name: 基础计算
+
+- slug: greedy
+  name: 贪心
+
+- slug: primenumber
+  name: 素数
+
+- slug: primefact
+  name: 质因数分解
+
+- slug: numberbaseconversion
+  name: 进制转换
+
+- slug: mod
+  name: 模运算
+
+- slug: modequ
+  name: 同余方程
+
+- slug: highprecision
+  name: 高精度
+
+- slug: combination
+  name: 组合数学
+
+- slug: cmod
+  name: 组合数求模
+
+- slug: mqmod
+  name: 矩阵快速幂
+
+- slug: rmq
+  name: 区间最值问题RMQ
+
+- slug: lca
+  name: 最小公共祖先LCA
+
+- slug: basicstring
+  name: 字符串基础处理
+
+- slug: hash
+  name: hash
+
+- slug: bfs
+  name: bfs
+
+- slug: dfs
+  name: dfs
+
+- slug: bashgame
+  name: Bash Game
+
+- slug: prodp
+  name: 概率DP
+
+- slug: lindp
+  name: 线性DP
+
+- slug: szipdp
+  name: 状压DP
+
+- slug: dp
+  name: DP
+
+- slug: sims
+  name: 模拟
+
+- slug: basicsearch
+  name: 朴素检索
+
+- slug: nwpuacm
+  name: 校赛
+
+- slug: bsearch
+  name: 二分
+
+- slug: tsearch
+  name: 三分
+
+- slug: shortestpath
+  name: 最短路最小生成树
+
+- slug: mst
+  name: 最小生成树
+
+- slug: MinimumArborescence
+  name: 最小树形图
+
+- slug: packages
+  name: 背包
+
+- slug: grouptheory
+  name: 群论
+
+- slug: disjointset
+  name: 并查集
+
+- slug: BinaryIndexedTree
+  name: 树状数组
+
+- slug: InversionNumber
+  name: 逆序数
+
+- slug: WythoffGame
+  name: Wythoff Game
+
+- slug: bashgame
+  name: Bash Game
+
+- slug: nimgame
+  name: Nim Game
+
+- slug: sgfun
+  name: Sprague-Grundy
+
+- slug: gausse
+  name: 高斯消元
+
+- slug: swaping
+  name: 刷题日志
+
