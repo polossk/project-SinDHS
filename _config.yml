@@ -42,10 +42,7 @@ paginate: 15
 jekyll-archives:
   enabled: ['categories', 'year', 'tags']
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
+exclude: ["Gemfile", "Gemfile.lock", "Rakefile"]
 permalink: '/:year/:month/:title/'
 kramdown:
   input: GFM
@@ -58,3 +55,8 @@ default:
       type: "posts"
     values:
       layout: "posts"
+
+# glynn
+ftp_host: 'polossk.com'
+ftp_dir: '/'
+ftp_passive: false

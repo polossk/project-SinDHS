@@ -20,9 +20,10 @@ permalink: /about-site/
 
 ## 网站更新日志
 
+* 2017.10.16 project-SinDHS Update ABS, [log]({% post_url 2017-10-16-sindhs-update-1 %})
 * 2017.05.31 由于zhihu-card时不时会有问题(cdn的问题)，所以现在不再借用cdn，同时增加了一个github-card，附上[github](https://github.com/lepture/github-cards)链接
 * 2017.03.22 由于duoshuo服务跪了，现在改用disqus服务
-* 2017.01.14 project-SinDHS が大体完成した
+* 2017.01.14 project-SinDHS が大体完成した, [log]({% post_url 2017-01-14-sindhs-otsusu %})
 * 2016.11.02 project-SinDHS を実行する
 * 2016.08.01 增加了一个zhihu-card，附上[github](https://github.com/laike9m/zhihu-card)链接
 * 2016.02.06 安利一个不错的工具leanote，支持markdown，并贴上leanote版本的博客[地址](http://polossk.leanote.com/)

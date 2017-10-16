@@ -4,8 +4,15 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
+    double-bag-ftps (0.1.4)
     ffi (1.9.14-x64-mingw32)
     forwardable-extended (2.6.0)
+    glynn (1.2.3)
+      double-bag-ftps (~> 0.1.2)
+      highline (>= 1.5)
+      jekyll
+      netrc
+    highline (1.7.8)
     jekyll (3.3.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -34,6 +41,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    netrc (0.11.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.4)
@@ -48,6 +56,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  glynn
   jekyll (= 3.3.0)
   jekyll-archives
   jekyll-feed (~> 0.6)
@@ -55,7 +64,7 @@ DEPENDENCIES
   jekyll-sitemap
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.2.5p319
 
 BUNDLED WITH
    1.13.7
