@@ -3,9 +3,7 @@ module Jekyll
 		def tag_links( tags )
 			return '' if tags == nil || tags.empty?
 			output = []
-
 			jekyll_archives_installed = Jekyll.const_defined?('Archives', false)
-
 			tags.each { |elem|
 				elem_data = tag_data(elem, @context)
 				output << (jekyll_archives_installed ? tag_link(elem_data, @context) : elem_data['name'])

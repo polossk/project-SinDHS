@@ -3,9 +3,7 @@ module Jekyll
 		def category_links( categories )
 			return '' if categories == nil || categories.empty?
 			output = []
-
 			jekyll_archives_installed = Jekyll.const_defined?('Archives', false)
-
 			categories.each { |elem|
 				elem_data = category_data(elem, @context)
 				output << (jekyll_archives_installed ? category_link(elem_data, @context) : elem_data['name'])
