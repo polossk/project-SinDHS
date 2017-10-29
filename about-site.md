@@ -20,6 +20,7 @@ permalink: /about-site/
 
 ## 网站更新日志
 
+* 2017.10.29 删除所有竞赛期间的文章, 已经归档到 github 上
 * 2017.10.16 project-SinDHS Update ABS, [log]({% post_url 2017-10-16-sindhs-update-1 %})
 * 2017.05.31 由于zhihu-card时不时会有问题(cdn的问题)，所以现在不再借用cdn，同时增加了一个github-card，附上[github](https://github.com/lepture/github-cards)链接
 * 2017.03.22 由于duoshuo服务跪了，现在改用disqus服务
