@@ -7,12 +7,12 @@ permalink: /about-me/
 
 如你所见这就是我的个人小站。<del>过去的好多东西都在CSDN和cnblogs，不过会慢慢搬家。</del>过去的小站的东西已经全部搬家完成啦！
 
-如果您对我的小站的历程感兴趣，可以点击上方的About Site，或者直接走此处的传送门。
+如果您对我的小站的历程感兴趣，可以点击上方的About Site，或者直接走此处的[传送门](/about-site/)。
 
 联系我：
 
 > * Github: https://github.com/polossk
-> * E-mail: polossk_dev@126.com
+> * E-mail: <polossk_dev@126.com>
 
 * [弃用]CSDN: <del>http://blog.csdn.net/polossk</del>
 * [弃用]cnblogs: <del>http://www.cnblogs.com/polossk</del>
@@ -23,6 +23,6 @@ permalink: /about-me/
 
 或者现在区块链这么发达, 你也可以用 ETH 打赏 emmm (bitcoin 还是留着养老吧233), 你要是想用 BTC 打赏也是可以的:
 
-* BTC: 1HWeSeYje2Kcp67LievqhcbzeLrKADXXzu
-* BCC: 15dqDLBasHd2Jeh4QEksQrMuCcFS4pgKD6
+* BTC: 1MDrVcGaZFfgiEcrpqmwpRrZzvJQ5EdzMz
+* BCC: 156WQJqcUorwRScqL1L8DBT1XMW88hjHEe
 * ETH: 0x22E854795228F723c99508e3F4379588E21e1bC0

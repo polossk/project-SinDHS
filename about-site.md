@@ -6,7 +6,7 @@ permalink: /about-site/
 ## 当前站点信息
 
 * Url: <http://blog.polossk.com/>
-* host: 阿里云 <http://www.aliyun.com/>
+* host: 阿里云 http://www.aliyun.com/
 * 连通性: IPv4 <span style="color: #00ff00;">OK</span> IPv6 <span style="color: #ff0000;">Failed</span>
 
 ## 当前站点目录
