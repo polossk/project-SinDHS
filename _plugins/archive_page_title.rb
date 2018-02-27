@@ -3,7 +3,7 @@ require_relative 'tag_links'
 
 module Jekyll
 	class ArchivePageTitleTag < Liquid::Tag
-		ARCHIVE_PAGE_TYPES = %w(category tag year month day)
+		ARCHIVE_PAGE_TYPES = %w(whole category tag year month day)
 		include CategoryLinksFilter
 		include TagLinksFilter
 		
@@ -17,6 +17,8 @@ module Jekyll
 				return ''
 			end
 			case page_type
+			when 'whole'
+				%Q{<i class="icon-archive icon-large"></i>全站归档}
 			when 'category'
 				hoge = category_data(page['title'], context)['name']
 				%Q{<i class="icon-briefcase icon-large"></i> <i class="icon-quote-left"></i>#{hoge}<i class="icon-quote-right"></i> 分类的归档}

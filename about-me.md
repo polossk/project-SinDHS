@@ -17,9 +17,9 @@ permalink: /about-me/
 * [弃用]CSDN: <del>http://blog.csdn.net/polossk</del>
 * [弃用]cnblogs: <del>http://www.cnblogs.com/polossk</del>
 
-如果你觉得本站有点儿意思, 可以考虑无偿或有偿赞助我, 通过支付宝扫码:
+如果你觉得本站有点儿意思, 可以考虑无偿或有偿赞助我, 通过支付宝扫码或者微信赞赏:
 
-<img src="{{ site.base }}/images/2017/03/alipaycode.jpg" title="scan_this" height="50%" />
+<img src="{{ site.base }}/images/2017/03/alipaycode.jpg" title="scan_this" width="100%"/>
 
 或者现在区块链这么发达, 你也可以用 ETH 打赏 emmm (bitcoin 还是留着养老吧233), 你要是想用 BTC 打赏也是可以的:
 

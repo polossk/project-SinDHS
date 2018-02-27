@@ -38,22 +38,102 @@ layout: default
 	</article>
 	{% endfor %}
 	<nav>
-		<ul class="pager">
-		{% if paginator.previous_page %}
-			<li class="previous">
-			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '/index.html', '/' }}">
-			&laquo; 前一页</a>
+		<ul class="pagination">
+			<li>
+				<a href="{{ site.fuckurl }}">
+					<span>首页</span>
+				</a>
 			</li>
-		{% endif %}
-
-		{% if paginator.next_page %}
-			<li class="next">
-			<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
-			&raquo; 后一页</a>
+			<li>
+				{% if paginator.page == 1 %}
+					<span>&laquo;</span>
+				{% else %}
+					{% if paginator.previous_page == 1 %}
+						<a href="{{ site.baseurl }}">
+					{% else %}
+						<a href="{{ paginator.previous_page_path | perpend: site.baseurl | replace: '/index.html', '/' }}">
+					{% endif %}
+					<span>&laquo;</span>
+					</a>
+				{% endif %}
 			</li>
-		{% endif %}
+			{% if paginator.total_pages < 9 %}
+				{% for i in (1..paginator.total_pages) %}
+					{% if paginator.page == i %}
+						<li class="active">
+					{% else %}
+						<li>
+					{% endif %}
+					{% if i == 1 %}
+						<a href="{{ site.fuckurl }}">{{i}}</a>
+					{% else %}
+						<a href="{{ i | prepend: '/page' | prepend: site.baseurl }}">{{i}}</a>
+					{% endif %}
+				{% endfor %}
+			{% else %}
+				{% assign floor_pages = 4 %}
+				{% assign ceil_pages = paginator.total_pages | minus: 4 %}
+				{% if paginator.page <= floor_pages %}
+					{% for i in (1..9) %}
+						{% if paginator.page == i %}
+							<li class="active">
+						{% else %}
+							<li>
+						{% endif %}
+						{% if i == 1 %}
+							<a href="{{ site.fuckurl }}">{{i}}</a>
+						{% else %}
+							<a href="{{ i | prepend: '/page' | prepend: site.baseurl }}">{{i}}</a>
+						{% endif %}
+					{% endfor %}
+				{% elsif paginator.page >= ceil_pages %}
+					{% assign page_start0 = paginator.total_pages | minus: 8 %}
+					{% for i in (page_start0..paginator.total_pages) %}
+						{% if paginator.page == i %}
+							<li class="active">
+						{% else %}
+							<li>
+						{% endif %}
+						{% if i == 1 %}
+							<a href="{{ site.fuckurl }}">{{i}}</a>
+						{% else %}
+							<a href="{{ i | prepend: '/page' | prepend: site.baseurl }}">{{i}}</a>
+						{% endif %}
+					{% endfor %}
+				{% else %}
+					{% assign page_start = paginator.page | minus: 4 %}
+					{% assign page_end = paginator.page | plus: 4 %}
+					{% for i in (page_start..page_end) %}
+						{% if paginator.page == i %}
+							<li class="active">
+						{% else %}
+							<li>
+						{% endif %}
+						{% if i == 1 %}
+							<a href="{{ site.fuckurl }}">{{i}}</a>
+						{% else %}
+							<a href="{{ i | prepend: '/page' | prepend: site.baseurl }}">{{i}}</a>
+						{% endif %}
+					{% endfor %}
+				{% endif %}
+			{% endif %}
+			<li>
+			{% if paginator.page == paginator.total_pages %}
+				<span>&raquo;</span>
+			{% else %}
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+					<span>&raquo;</span>
+				</a>
+			{% endif %}
+			</li>
+			<li>
+				<a href="{{ paginator.total_pages | prepend: '/page' | prepend: site.baseurl }}">
+					<span>末页</span>
+				</a>
+			</li>
+			<li class="disabled">
+				<span>第{{ paginator.page }}页 / 共{{ paginator.total_pages }}页</span>
+			</li>
 		</ul>
 	</nav>
-
-
 </div>
