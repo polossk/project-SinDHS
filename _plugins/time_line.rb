@@ -9,7 +9,7 @@ module Jekyll
 
 			def to_html( home_url )
 				url = "#{home_url}/#{@name}/"
-				%(<a href="#{url}" title="#{@name}">#{@name} (#{@frequence})</a>)
+				%(<a href="#{url}" title="#{@name}">#{@name}</a> (#{@frequence}))
 			end
 		end
 

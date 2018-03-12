@@ -11,7 +11,7 @@ def echo(stdout):
     for e in stdout: print(e, end='')
 
 def main():
-    config = Bunch(json.load(open('project-SinDHS.json', 'r')))
+    config = Bunch(json.load(open('_project-SinDHS.json', 'r')))
     os.system('bundle exec jekyll build')
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())

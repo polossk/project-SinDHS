@@ -1,6 +1,5 @@
 module Jekyll
 	class VersionTag < Liquid::Tag
-
 		def render( context )
 			"Jekyll #{Jekyll::VERSION}"
 		end
