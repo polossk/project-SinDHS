@@ -31,6 +31,9 @@
 - slug: image
   name: image
 
+- slug: palette
+  name: 色彩搭配
+
 - slug: fractal
   name: fractal
 
@@ -39,6 +42,12 @@
 
 - slug: jekyll
   name: Jekyll
+
+- slug: github
+  name: GitHub
+
+- slug: gitlab
+  name: GitLab
 
 - slug: machinelearning
   name: 机器学习

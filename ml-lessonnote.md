@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Site
+title: Machine Learning Notes
 permalink: /ml-lessonnote/
 ---
 > ただは<ruby>普通<rt>ふつう</rt></ruby>の<ruby>人間<rt>にんげん</rt></ruby>です
@@ -18,20 +18,18 @@ permalink: /ml-lessonnote/
 Bookcode: TODO
 
 # NoteBooks
-
-*	Mar 21st, 2016 统计学习方法(Mar 3rd, 2016 - Mar 21st, 2016)
-	*	主要讲解基于数据构建统计模型，从而对数据进行预测与分
-		析的统计学习方法，特别是监督学习方法
-	*	Notebook: [[portal](http://pan.baidu.com/s/1pJQWJb1)]
-*	Mar 2nd, 2016 图解机器学习(Jun 11th, 2016 - Mar 2nd, 2016)
-	*	主要讲解基于频率派的识别式机器学习算法，实现平台为matlab
-	*	Bookcode: [[Panel](http://bookcode.polossk.com/Irasuto-de-Manabu-KiKai-Gakusyuu/)][[code-git-here](https://github.com/polossk/Bookcode-of-Irasuto-de-Manabu-KiKai-Gakusyuu/)][[site-git-here](https://github.com/polossk/Bookcode-of-Irasuto-de-Manabu-KiKai-Gakusyuu-Web/)]
-	*	Notebook: [[portal](http://pan.baidu.com/s/1mgRIUqW)]
-*	Oct 18th, 2015 北京培训(Oct 15th, 2015 - Oct 18th, 2015)
-	*	[[ML] 机器学习课程 笔记本 (4) 杂]({% post_url 2015-10-18-ml-lessonnote-4 %})
-	*	[[ML] 机器学习课程 笔记本 (3) 聚类和其他]({% post_url 2015-10-18-ml-lessonnote-3 %})
-	*	[[ML] 机器学习课程 笔记本 (2) 分类]({% post_url 2015-10-16-ml-lessonnote-2 %})
-	*	[[ML] 机器学习课程 笔记本 (1) 基础]({% post_url 2015-10-15-ml-lessonnote-1 %})
+- *Mar 21st, 2016 统计学习方法(Mar 3rd, 2016 - Mar 21st, 2016)
+	- *主要讲解基于数据构建统计模型，从而对数据进行预测与分析的统计学习方法，特别是监督学习方法
+	- *Notebook: [[portal](http://pan.baidu.com/s/1pJQWJb1)]
+- *Mar 2nd, 2016 图解机器学习(Jun 11th, 2016 - Mar 2nd, 2016)
+	- *主要讲解基于频率派的识别式机器学习算法，实现平台为matlab
+	- *Bookcode: [[Panel](http://bookcode.polossk.com/Irasuto-de-Manabu-KiKai-Gakusyuu/)][[code-git-here](https://github.com/polossk/Bookcode-of-Irasuto-de-Manabu-KiKai-Gakusyuu/)][[site-git-here](https://github.com/polossk/Bookcode-of-Irasuto-de-Manabu-KiKai-Gakusyuu-Web/)]
+	- *Notebook: [[portal](http://pan.baidu.com/s/1mgRIUqW)]
+- *Oct 18th, 2015 北京培训(Oct 15th, 2015 - Oct 18th, 2015)
+	- *[[ML] 机器学习课程 笔记本 (4) 杂]({% post_url 2015-10-18-ml-lessonnote-4 %})
+	- *[[ML] 机器学习课程 笔记本 (3) 聚类和其他]({% post_url 2015-10-18-ml-lessonnote-3 %})
+	- *[[ML] 机器学习课程 笔记本 (2) 分类]({% post_url 2015-10-16-ml-lessonnote-2 %})
+	- *[[ML] 机器学习课程 笔记本 (1) 基础]({% post_url 2015-10-15-ml-lessonnote-1 %})
 
 # 文章翻译
 

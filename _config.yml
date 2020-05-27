@@ -20,9 +20,8 @@ host: blog.polossk.com
 port: 80
 # host: localhost
 # port: 4000
-fuckurl: http://blog.polossk.com # the base hostname & protocol for your site, e.g. http://example.com
+fuckurl: https://blog.polossk.com # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-github_username:  polossk
 data: ['categories.yml']
 
 # Build settings

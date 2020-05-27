@@ -3,7 +3,7 @@ layout: post
 title:  "[python] 某不科学的美工的瞎搞-3"
 date:   2018-02-14 20:59:08 +0800
 categories: battle hitorigoto
-tags: python image hoshizora
+tags: python image hoshizora palette
 ---
 2月14号又来了！又到了撸美工的时间！(这句话说了好几遍了233)
 
