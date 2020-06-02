@@ -51,8 +51,3 @@ default:
       type: "posts"
     values:
       layout: "posts"
-
-# glynn
-ftp_host: 'polossk.com'
-ftp_dir: '/'
-ftp_passive: false

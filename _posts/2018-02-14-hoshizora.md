@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[python] 某不科学的美工的瞎搞-3"
-date:   2018-02-14 20:59:08 +0800
-categories: battle hitorigoto
-tags: python image hoshizora palette
+title: "[python] 某不科学的美工的瞎搞-3"
+date: 2018-02-14 20:59:08 +0800
+categories: 随笔 独り言
+tags: python image palette
 ---
 2月14号又来了！又到了撸美工的时间！(这句话说了好几遍了233)
 
@@ -15,9 +15,9 @@ tags: python image hoshizora palette
 
 在获取到背景色之后, 这里需要做一个简单的明暗判断即可, 大于阈值的直接按照光亮设置, 反之设置为背景色即可. 明暗判断时进行一下灰度转换, 由于光亮点的三个通道值相同, 所以其灰度值不变, 而背景色有一个的三通道不相同, 需要额外设置其灰度, 具体转换公式为 `gray = 0.299 * R + 0.587 * B + 0.114 * G`, 更多的细节请参考[维基百科](#ref-3)
 
-附赠python代码
+附赠 python 代码
 
-{% highlight python %}
+```python
 from PIL import Image
 import math
 
@@ -57,9 +57,10 @@ def main():
 
 if __name__ == '__main__':
     main()
-{% endhighlight %}
+```
 
 ## Result
+
 自己调的结果, 从上到下依次为<span style="color: #0B1013;">233</span> 黒橡（くろつるばみ, #0B1013）, <span style="color: #0C0C0C;">666</span> 呂（ろ, #0C0C0C）, <span style="color: #080808;">998</span> 黒（くろ, #080808）, <span style="color: #000000;">110</span> 纯黑色（#000000）.
 
 <img src="{{ site.base }}/images/2018/02/hoshizora_kurotsurubami.png" width="100%"/>
@@ -71,6 +72,7 @@ if __name__ == '__main__':
 <img src="{{ site.base }}/images/2018/02/hoshizora_null.png" width="100%"/>
 
 ## references
+
 1. <a name="ref-1"></a>[用三段 140 字符以内的代码生成一张 1024×1024 的图片 \| Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/6039)
 2. <a name="ref-2"></a>[NIPPON COLORS - 日本の伝統色](http://nipponcolors.com)
 3. <a name="ref-3"></a>[Grayscale - Wikipedia](https://en.wikipedia.org/wiki/Grayscale)

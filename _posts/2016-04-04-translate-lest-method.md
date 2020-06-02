@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[渣翻] Laplacian Eigenmaps and Spectral Technique for Embedding and Clustering"
-date:   2016-04-04 06:16:00 +0800
-categories: notebook machinelearning
+title: "[渣翻] Laplacian Eigenmaps and Spectral Technique for Embedding and Clustering"
+date: 2016-04-04 06:16:00 +0800
+categories: 笔记本 机器学习
 tags: laplacianeigenmaps machinelearning manifoldlearning translation demensionreducation
 ---
 
@@ -61,7 +61,6 @@ tags: laplacianeigenmaps machinelearning manifoldlearning translation demensionr
 	不妨令$$ y_0, \cdots, y_{k-1}$$为式(1)的解, 并且根据其对应的特征值按从小到大排列, 即$$ y_0$$对应着最小的特征值(实际上为0). 则原始数据$$x_i$$在低维空间$$ R^m$$的嵌入结果可以由$$( y_1(i), \cdots, y_m(i))$$得到.
 
 ### Justification
-
 
 回忆之前给出的利用数据集通过连接数据点与其近邻点所构造出的赋权图$$G(V,E)$$. 考虑将联通赋权图$$G$$映射到一条直线, 使得相连的点能够尽可能的保持相邻的问题. 我们希望选择一组$$y_i \in R$$, 在合适的条件约束下最小化函数
 
@@ -146,25 +145,29 @@ $$W_{ij} = \begin{cases}\exp\{-\frac{ \|x_i - x_j\|^2 }{4t}\}, & \text{if } \|x_
 ## Figures
 
 ### 图 1
+
 <img src="{{ site.base }}/images/2016/04/figure1.png" width="90%" />
 左边的子图展示了一个水平条和一个垂直条. 中间的子图是将所有图像数据用拉普拉斯特征匹配后的在二维空间的表示. 右边的子图展示了通过使用主成分分析法所选取的前两个主要分量的数据表示. 图中用"."表示垂直条, 用"+"表示水平条.
 
 ### 图 2
+
 <img src="{{ site.base }}/images/2016/04/figure2.png" width="90%" />
 布朗语料库中300个最频繁的单词的频域谱表示.
 
 ### 图 3
+
 <img src="{{ site.base }}/images/2016/04/figure3.png" width="90%" />
 三个子图从左到右展示的是图2中用箭头标注的片段. 第一个包含动词不定式, 第二个包含介词, 第三个大多是情态动词和助动词. 我们可以观察到句法结构得到了很好的保留.
 
 ### 图 4
+
 <img src="{{ site.base }}/images/2016/04/figure4.png" width="90%" />
 685个讲话数据点的二维拉普拉斯频域谱表示.
 
 ### 图 5
+
 <img src="{{ site.base }}/images/2016/04/figure5.png" width="90%" />
 上图从左到右展示了图4中的三个选中的区域. 注意到所选择区域的语音是相似的. 注意, 用相同的符号标注的数据点, 在发声过程中, 可能在不同点得到的同音素的现象. 符号"sh"表示单词"she"的摩擦音, "aa", "ao"分别表示单词"dark", "all". "kcl", "dcl", "gcl"表示分别遇到词尾"k", "d", "g"时发音终止. "h#"表示没有发声.
-
 
 ## References
 

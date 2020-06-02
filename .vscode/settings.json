@@ -1,0 +1,4 @@
+{
+    "mdmath.delimiters": "kramdown",
+    "markdown.extension.math.enabled": false
+}

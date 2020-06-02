@@ -1,44 +1,40 @@
 <aside class="about">
-	<h3 class="aside-title">关于</h3>
+	<h3 class="aside-title">{{ site.description }}</h3>
 	<div class="aside-content">
-		<p>{{ site.description }}</p>
-	</div>
-</aside>
-
-<aside class="subscribe">
-	<div class="aside-content">
-		<p>
-			<a href="{{ site.baseurl }}/about-me/">
-				<span><i class="icon-user"></i> About Me </span>
-			</a>
-			<a href="{{ site.baseurl }}/about-site/">
-				<span><i class="icon-hdd"></i> About Site </span>
-			</a>
-		</p>
-		<p>
-			<a href="https://github.com/polossk">
-				<span><i class="icon-github"></i> polossk </span>
-			</a>
-			<a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-				<span><i class="icon-rss"></i> 文章RSS </span>
-			</a>
-		</p>
-		<p>
-			<a href="{{ "/sitemap.xml" | prepend: site.baseurl }}">
-				<span><i class="icon-sitemap"></i> Sitemap </span>
-			</a>
-			<a href="{{ "/post-archive/" | prepend: site.baseurl }}">
-				<span><i class="icon-archive"></i> Post Archive </span>
-			</a>
-		</p>
-		<p>
-			<a href="{{ site.baseurl }}/category/">
-				<span><i class="icon-folder-open"></i> categories</span>
-			</a> and
-			<a href="{{ site.baseurl }}/tag/">
-				<span><i class="icon-tags"></i> tags </span>
-			</a>
-		</p>
+		<div class="col-2">
+			<div><a href="{{ site.baseurl }}/about-me/">
+					<span><i class="icon-user"></i> About Me </span>
+				</a>
+			</div>
+			<div><a href="{{ site.baseurl }}/about-site/">
+					<span><i class="icon-hdd"></i> About Site </span>
+				</a>
+			</div>
+			<div><a href="https://github.com/polossk">
+					<span><i class="icon-github"></i> polossk </span>
+				</a>
+			</div>
+			<div><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+					<span><i class="icon-rss"></i> RSS Feed </span>
+				</a>
+			</div>
+			<div><a href="{{ site.baseurl }}/category/">
+					<span><i class="icon-folder-open"></i> Categories</span>
+				</a>
+			</div>
+			<div><a href="{{ site.baseurl }}/tag/">
+					<span><i class="icon-tags"></i> Tags </span>
+				</a>
+			</div>
+			<div><a href="{{ "/post-archive/" | prepend: site.baseurl }}">
+					<span><i class="icon-archive"></i> Archive </span>
+				</a>
+			</div>
+			<div><a href="{{ "/sitemap.xml" | prepend: site.baseurl }}">
+					<span><i class="icon-sitemap"></i> Sitemap </span>
+				</a>
+			</div>
+		</div>
 	</div>
 </aside>
 

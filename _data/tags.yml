@@ -13,7 +13,7 @@
 - slug: Csharp
   name: C#
 
-- slug: LaTex
+- slug: LaTeX
   name: LaTeX
 
 - slug: Javascript
@@ -62,7 +62,7 @@
   name: 流形学习
 
 - slug: demensionreducation
-  name: 降维
+  name: 数据降维
 
 - slug: translation
   name: 翻译

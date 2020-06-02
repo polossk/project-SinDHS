@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[CentOS7] 程序员之泪 nodejs mongodb nginx 不完全环境配置手册"
-date:   2017-03-06 15:23:55 +0800
-categories: notebook computeros
-tags: CentOS7 nodejs mongodb nginx
+title: "[CentOS] 程序员之泪 nodejs mongodb nginx 不完全环境配置手册"
+date: 2017-03-06 15:23:55 +0800
+categories: 笔记本 环境配置
+tags: CentOS nodejs mongodb nginx
 ---
 时至今日终于把 project-Hagane-and-Mizuki 的所有任务折腾完了，先后经历了瞎搞用户登录验证，数据库一表包含森罗万象流，一发 update 清空了数据表，修改环境变量结果把整个服务器搞宕机等各种高光时刻。
 
@@ -22,13 +22,13 @@ tags: CentOS7 nodejs mongodb nginx
 
 当然这台服务器是一个朴素的阿里云小机器，用的是 CentOS7 ，勉强能跑。
 
-# 安装 nginx
+## 安装 nginx
 
 一开始我以为需要编译安装（事实上我以前都是 `make && make install` 整得），后来发现 yum 可以直接安装。
 
 真是灭m顶d之z灾z！
 
-所以老生常谈了，更新系统然后直接install
+所以老生常谈了，更新系统然后直接 install
 
 ```shell
 $ yum -y update upgrade
@@ -68,7 +68,7 @@ $ /usr/local/nginx/sbin/nginx -t
 
 检查无误之后，再重载配置文件即可
 
-# 安装 mongodb
+## 安装 mongodb
 
 当然，一开始我的 mongodb 也是编译安装的，后来得知实际上有编译好的包可以直接用，所以改变策略直接 yum install.
 
@@ -114,7 +114,7 @@ $ systemctl stop mongod.service      # 关闭
 
 mongo 控制台直接用 `mongo localhost:23333 -u whoami -p suineg --authenticationDatabase admin` 登录就行了。当然这些操作实在设置好了 admin 以及端口之后的，如果是第一次登陆，那就直接 `mongo` 就行了。
 
-# nodejs
+## nodejs
 
 本地开发阶段结束后，将项目打包上传至服务器，然后配置服务器环境。
 
@@ -141,7 +141,7 @@ mongo 控制台直接用 `mongo localhost:23333 -u whoami -p suineg --authentica
 
 `script` 标记着程序启动入口，因为我的项目使用 express 框架写的，默认的入口就是 `./bin/www` 。如果自己不确定的话可以查看自己项目的 `package.json` 文件，这里面详细说明了各类关键信息。
 
-# nginx 静态资源转发
+## nginx 静态资源转发
 
 到现在为止， node 已经开始接管相关服务了，但是为了提高效率，外层用 nginx 将静态文件直接转发而不必经过 node 。具体操作如下：
 

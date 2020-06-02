@@ -2,7 +2,7 @@
 layout: post
 title: "[project-SinDHS] Update REBORN"
 date: 2020-05-26 10:21:18 +0800
-categories: battle hitorigoto
+categories: 随笔 独り言
 tags: gitlab jekyll palette
 ---
 

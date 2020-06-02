@@ -2,7 +2,7 @@
 layout: post
 title: "[Makefile] 不完全指导手册"
 date: 2017-03-13 14:05:43 +0800
-categories: notebook computeros
+categories: 笔记本 环境配置
 tags: makefile g++
 ---
 `make` 是最常用的也是最经典的 build 工具，然而我却现在才开始用这个家伙。简单地说，只要自行规范好 build 顺序，只需要一句简单的 `make` 就可以解决所有问题。正如其历史所言，一开始 `make` 常用于构建C项目，但实际上只需要提供好编译命令，任何项目都可以用 `make` 构建生成。
@@ -30,7 +30,7 @@ clean:
 
 每次写好最终的 assignment.tex 文档之后，只需要执行一个 `make` 就可以编译并打开生成的文档了。
 
-# 上手
+## 上手
 
 当然上面的那个例子有点过分了，实际上有更简单的一个例子
 
@@ -48,7 +48,7 @@ main: main.cpp
 }
 ```
 
-自然，如果有多个依赖项， `make` 会先自行检查本地目录有没有，随后检查自己是否可以直接构建，如果都没有就会直接报错结束这次构建任务。如果成功构建（或寻得）了这次构建任务的依赖项，便会开始这次构建任务，即依次执行具体的编译指令。之所以叫具体的编译指令而不是命令，是因为 `make` 并不能完全接受大部分的命令，比如 Windows 下的 start 。由于 start 是一个命令而非文件，所以 make 会返回错误，这里应该使用 `cmd /c start` 来代替直接使用 `start` 。而 Linux 下，大部分所用的命令其本质为可执行文件，所以一般情况下不必担心这个问题。
+自然，如果有多个依赖项，`make` 会先自行检查本地目录有没有，随后检查自己是否可以直接构建，如果都没有就会直接报错结束这次构建任务。如果成功构建（或寻得）了这次构建任务的依赖项，便会开始这次构建任务，即依次执行具体的编译指令。之所以叫具体的编译指令而不是命令，是因为 `make` 并不能完全接受大部分的命令，比如 Windows 下的 start 。由于 start 是一个命令而非文件，所以 make 会返回错误，这里应该使用 `cmd /c start` 来代替直接使用 `start`。而 Linux 下，大部分所用的命令其本质为可执行文件，所以一般情况下不必担心这个问题。
 
 ```plain
 >make start
@@ -72,24 +72,27 @@ a.o: a.cpp a.h
 	g++ -c a.cpp a.h
 ```
 
-如此一来便可以通过 `make main` 直接构建出最后的可执行文件 main 。同样也可以只写 `make` ，因为 `make` 会默认构建 Makefile 文件中的第一个目标。
+如此一来便可以通过 `make main` 直接构建出最后的可执行文件 main 。同样也可以只写 `make`，因为 `make` 会默认构建 Makefile 文件中的第一个目标。
 
 
-# 添加变量
+## 添加变量
 
-有的时候你会发现你的代码用到了 C++11 ，所以你不得不在编译命令里加上一句
+有的时候你会发现你的代码用到了 C++11，所以你不得不在编译命令里加上一句
+
 ```makefile
 main: main.cpp
 	g++ -o main main.cpp -std=c++11
 ```
 
 然后你发现你忘记了正确链接数学基本库
+
 ```makefile
 main: main.cpp
 	g++ -o main main.cpp -std=c++11 -lm
 ```
 
 然后你发现所有的命令都要加上这两条
+
 ```makefile
 main: main.o a.o
 	g++ -o main main.o a.o -std=c++11 -lm
@@ -102,6 +105,7 @@ a.o: a.cpp a.h
 ```
 
 然后你发现你违反了DRY(Don't Repeat Yourself)原则，所以你设置了一个变量叫做 CXXFLAGS 用来记录所有的编译选项，
+
 ```makefile
 CXXFLAGS = -std=c++11 -lm
 main: main.o a.o
@@ -114,7 +118,8 @@ a.o: a.cpp a.h
 	g++ -c a.cpp a.h $(CXXFLAGS)
 ```
 
-紧接着你发现部署环境里用的是 clang ，开发环境用的是 g++
+紧接着你发现部署环境里用的是 clang，开发环境用的是 g++
+
 ```makefile
 CC       = g++ # clang
 CXXFLAGS = -std=c++11 -lm
@@ -131,12 +136,13 @@ a.o: a.cpp a.h
 这样只需要在不同的地方修改一处注释就行了。
 
 除了这些基本用法意外，make还可以直接调用shell的变量
+
 ```makefile
 test:
 	echo $$JAVA_HOME
 	@echo $$JAVA_HOME
 ```
-在这里，两个 `$$` 表示正常环境下的一个 `$` ，也可以理解为， `$` 有转义字符的意思。而第三行的 `@...` 表示关闭 echo ，即没有命令回显。
+在这里，两个 `$$` 表示正常环境下的一个 `$`，也可以理解为，`$` 有转义字符的意思。而第三行的 `@...` 表示关闭 echo，即没有命令回显。
 
 另外针对变量 makefile 有一些运算符[[ref 1]]({% post_url 2017-03-13-markfile-tutorial %}#ref1)
 ```makefile
@@ -147,13 +153,13 @@ VARIABLE += value # append
 
 ```
 
-除此之外， `make` 还提供了一些简单的内置变量，诸如 `$(CC)` 表示默认的C编译器(cc)， `$(CXX)` 表示默认的C++编译器(g++)具体的可以查看链接[[ref 2]]({% post_url 2017-03-13-markfile-tutorial %}#ref2)浏览。
+除此之外，`make` 还提供了一些简单的内置变量，诸如 `$(CC)` 表示默认的C编译器(cc)，`$(CXX)` 表示默认的 C++ 编译器。具体的可以查看链接[[ref 2]]({% post_url 2017-03-13-markfile-tutorial %}#ref2)浏览。
 
-# 自动变量
+## 自动变量
 
 真正有意义的我觉得还是这个自动变量，因为你不可能为每一个目标单独写构建命令。常见的自动变量有这几个：
 
-$@, $<, $^, $*，分别表示，构建目标，第一个前置条件，所有前置条件，和匹配符%匹配的部分。
+`$@`，`$<`，`$^`，`$*`，分别表示，构建目标，第一个前置条件，所有前置条件，和匹配符%匹配的部分。
 
 ```makefile
 a.txt: b.txt c.txt
@@ -164,7 +170,9 @@ a.txt: b.txt c.txt
 %.o: %.cpp %.h
 	g++ -o $* %^ -std=c++11
 ```
+
 这样相当于可以轻松地解决大量的重复工作。比如之前的C++项目就可以直接写成这种形式：
+
 ```makefile
 CC       = g++ # clang
 EXEC     = main
@@ -188,7 +196,7 @@ clean:
 
 更多的自动变量可以查看链接[[ref 3]]({% post_url 2017-03-13-markfile-tutorial %}#ref3)浏览。
 
-# Reference
+## Reference
 
 <a name="ref1"></a>[1]: [Makefile variable assignment - stackoverflow](http://stackoverflow.com/questions/448910/makefile-variable-assignment)
 

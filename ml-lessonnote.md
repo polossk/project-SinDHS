@@ -3,10 +3,10 @@ layout: page
 title: Machine Learning Notes
 permalink: /ml-lessonnote/
 ---
-> ただは<ruby>普通<rt>ふつう</rt></ruby>の<ruby>人間<rt>にんげん</rt></ruby>です
+
+> <ruby>俺<rt>おれ</rt></ruby>じゃ<ruby>駄目<rt>だめ</rt></ruby>なのか
 
 # \# Notice \#
-
 
 只是用来记录当前进度与笔记归档而已。任何问题均可直接在评论中直接说明。欢迎各位交pai流zhuan指pi正ping。
 
