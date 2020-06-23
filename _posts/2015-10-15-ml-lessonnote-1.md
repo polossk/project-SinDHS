@@ -60,9 +60,9 @@ pip install --packagename
 
 方法二：
 
-找 windows的\*.exe/\*.msi包，直接安装。
+找 windows 的 `(\*.exe)` 或 `(\*.msi)` 包，直接安装。
 
-值得注意的是务必看准python版本，比如我现在用的是3.5,那么其他版本都是不能用的。
+值得注意的是务必看准 python 版本，比如我现在用的是 3.5，那么其他版本都是不能用的。
 
 方法三：
 
@@ -74,7 +74,7 @@ pip install --packagename
 python setup.py install
 ```
 
-或者看readme的介绍。
+或者看 readme 的介绍。
 
 方法四：
 
@@ -84,9 +84,9 @@ python setup.py install
 pip install --packagewhellname
 ```
 
-回到方法一的问题，标准解决方案是，安装一个VS2008企业版然后编译即可，或者修改环境变量中的"VS120COMNTOOLS"之类的到真实的有"vsvarsall.bat"的文件夹里。然而我这里不管怎么修改怎么添加都没用。
+回到方法一的问题，标准解决方案是，安装一个 VS2008 企业版然后编译即可，或者修改环境变量中的 `VS120COMNTOOLS` 之类的到真实的有 `vsvarsall.bat` 的文件夹里。然而我这里不管怎么修改怎么添加都没用。
 
-所以我的建议是，下载并安装编译好的轮子。这里给出一个传送门[[->](http://www.lfd.uci.edu/~gohlke/pythonlibs/)]
+所以我的建议是，下载并安装编译好的轮子。这里给出一个[传送门](http://www.lfd.uci.edu/~gohlke/pythonlibs/)。
 
 ### 然而
 
@@ -100,7 +100,7 @@ pip install --packagewhellname
 * pip install "numpy-1.9.3+vanilla-cp35-none-win_amd64.whl"
 * pip install pylab
 
-然而最后的最后我还是直接安了一个Anaconda3（逃
+然而最后的最后我还是直接安了一个 Anaconda3（逃
 
 ## 1. What are they talking about?
 
@@ -108,13 +108,13 @@ pip install --packagewhellname
 
 ### (1) Search Engine
 
-搜索引擎也是基于机器学习搞出来的一个很有趣的设备（玩具）。同时也得知了一些有趣的应用。一开始大家的思路似乎都是很轻松的基于词频来进行搜索结果的排序，再后来由于有网站恶意开始对基于词频这一点进行攻击，“我告诉大家我叫XX网站”也逐渐改变成“他们都叫我XX网站”，也就是著名的pagerank的雏形了。
+搜索引擎也是基于机器学习搞出来的一个很有趣的设备（玩具）。同时也得知了一些有趣的应用。一开始大家的思路似乎都是很轻松的基于词频来进行搜索结果的排序，再后来由于有网站恶意开始对基于词频这一点进行攻击，“我告诉大家我叫XX网站”也逐渐改变成“他们都叫我XX网站”，也就是著名的 pagerank 的雏形了。
 
-不过有趣的是，SEO，这个服务和搜索引擎的对抗，往往更能体现出搜索引擎算法的进化。除了国内某公司的手动权重分之外，借助某些SEO团队的“殚精竭虑”所试验出的方案往往会直接放倒甚至是google这样的良心公司。
+不过有趣的是，SEO，这个服务和搜索引擎的对抗，往往更能体现出搜索引擎算法的进化。除了国内某公司的手动权重分之外，借助某些 SEO 团队的“殚精竭虑”所试验出的方案往往会直接放倒甚至是google这样的良心公司。
 
 所以，目前依旧是，人工智能还得管人类叫爷爷咯！
 
-再过50年呢？
+再过 50 年呢？
 
 ### (2) Paper Duplicate Checking/Code Duplicate Checking
 
@@ -132,23 +132,23 @@ pip install --packagewhellname
 
 ### (3) TFIDF and Entropy
 
-这个问题是老师上课提到的：很多人都说我们这个抬不起头来，因为我们的用词频权重(TF, a.k.a Term Frequency)和逆文档频率(IDF, a.k.a Inverse Document Frequency)的乘积作为最终的向量空间的权重并没有太好的理论依据。不过还好临走前把信息论作业抄完了，将将会信息熵这个概念，我就班门弄斧证明一个$$\mathrm{TFIDF}(=\mathrm{TF} \times \mathrm{IDF})$$
+这个问题是老师上课提到的：很多人都说我们这个抬不起头来，因为我们的用词频权重（TF, a.k.a Term Frequency）和逆文档频率（IDF, a.k.a Inverse Document Frequency）的乘积作为最终的向量空间的权重并没有太好的理论依据。不过还好临走前把信息论作业抄完了，将将会信息熵这个概念，我就班门弄斧证明一个 $$\mathrm{TFIDF} = \mathrm{TF} \times \mathrm{IDF}$$
 
 首先还是先整理下目前用到的名词：
 
-$$\mathrm{TF} $$：也就是词频了，这个词频有很多种方案，比如直接用原始的频率，也可以取个对数（怎么取当然是随意搞），也可以归一化频率，这个也是随意搞。我这里假设，对于单词$$W_k$$，$$c_{ik}$$表示其在文档$$D_i$$中出现的次数，那么显然有对于单词$$W_k$$的词频为
+* 词频 $$\mathrm{TF}$$：这个词频有很多种方案，比如直接用原始的频率，也可以取个对数（怎么取当然是随意搞），也可以归一化频率，这个也是随意搞。我这里假设，对于单词 $$W_k$$，$$c_{ik}$$ 表示其在文档 $$D_i$$ 中出现的次数，那么显然有对于单词 $$W_k$$ 的词频为
 
 $$\mathrm{TF}_{ik} = \frac{c_{ik}}{\sum_j{c_{ij}}}$$
 
-$$\mathrm{IDF})$$：这个是逆文档频率，也就是文档频率的倒数，再取对数。文档频率指的是，一个词汇$$W_k$$在整个文档集合$$\{D_i\}$$中，出现的频率，不妨假设词汇$$W_k$$在文档集合$$\{D_i\}$$出现的次数是$$d_{k}$$，那么显然有对于单词$$W_k$$$$\mathrm{DF}_k = \frac{d_k}{N}$$$$\mathrm{IDF}_k = \log{\frac{1}{\mathrm{DF}_k}}$$
+* 逆文档频率 $$\mathrm{IDF}$$：也就是文档频率的倒数，再取对数。文档频率指的是，一个词汇 $$W_k$$ 在整个文档集合 $$\{D_i\}$$ 中，出现的频率，不妨假设词汇 $$W_k$$ 在文档集合 $$\{D_i\}$$ 出现的次数是 $$d_{k}$$，那么显然有对于单词 $$W_k$$ 显然有 $$\mathrm{DF}_k = d_k/N$$，$$\mathrm{IDF}_k = \log \mathrm{DF}_k^{-1}$$
 
 可能写到这里基本上就出来了，不过还是写完好了：
 
 针对文档$$D_i$$，有：
 
-$$\sum_k{\mathrm{TF}_{ik} \mathrm{IDF}_k} = \sum_k{\frac{c_{ik}}{\sum_j{c_{ij}}} \left( -\log{\frac{d_k}{N}} \right)} = -\frac{1}{\sum_j{c_{ij}}} \sum_k{\left( c_{ik} \log{\frac{d_k}{N}} \right)}$$
+$$\sum_k{\mathrm{TF}_{ik} \times \mathrm{IDF}_k} = \sum_k{\frac{c_{ik}}{\sum_j{c_{ij}}} \left( -\log{\frac{d_k}{N}} \right)} = -\frac{1}{\sum_j{c_{ij}}} \sum_k{\left( c_{ik} \log{\frac{d_k}{N}} \right)}$$
 
-注意到此时的结果实际上便是文档$$D_i$$的信息熵，即证。
+注意到此时的结果实际上便是文档 $$D_i$$ 的信息熵，即证。
 
 ### (4)Best Algorithm and Most Data
 

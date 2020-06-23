@@ -1,8 +1,11 @@
-- slug: jkrs
-  value: http://blog.csdn.net/qq_25158307
+- slug: kidozh
+  value: https://kidozh.com
 
 - slug: skyzjy
   value: https://www.jianshu.com/u/2823d35ef6d5
 
 - slug: lrtfm
-  value: https://lrtfm.gitlab.io/my-blog/
+  value: https://blog.lrtfm.com/
+
+- slug: jkrs
+  value: http://blog.csdn.net/qq_25158307
